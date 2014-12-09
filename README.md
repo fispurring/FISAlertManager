@@ -54,12 +54,10 @@ Show a login alert:
 
 ##Some Screenshots
 ![ios8_1](Screenshots/ios8_1.png)
-![ios8_2](Screenshots/ios8_2.png)
 ![ios8_3](Screenshots/ios8_3.png)
 ![ios8_4](Screenshots/ios8_4.png)
 ![ios8_5](Screenshots/ios8_5.png)
 
-![ios6_1](Screenshots/ios6_1.jpg)
 ![ios6_2](Screenshots/ios6_2.jpg)
 ![ios6_3](Screenshots/ios6_3.jpg)
 ![ios6_4](Screenshots/ios6_4.jpg)
