@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,7 +16,66 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IED-8A-sN7">
+                                <rect key="frame" x="257" y="62" width="87" height="30"/>
+                                <state key="normal" title="Show Dialog">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showDialog:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VPw-ns-S8b"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LGu-64-poI">
+                                <rect key="frame" x="230" y="117" width="141" height="30"/>
+                                <state key="normal" title="Show ConfirmDialog">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showConfirmDialog:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uXe-hN-JQJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3LO-aQ-dfb">
+                                <rect key="frame" x="243" y="172" width="115" height="30"/>
+                                <state key="normal" title="Show TextDialog">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showTextDialog:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TEf-QW-Ab2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y4O-Lr-Uno">
+                                <rect key="frame" x="228" y="227" width="145" height="30"/>
+                                <state key="normal" title="Show Custom Dialog">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showCustomDialog:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ql6-MP-Mxd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gV1-LL-b7A">
+                                <rect key="frame" x="236" y="282" width="129" height="30"/>
+                                <state key="normal" title="Show Login Dialog">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showLoginDialog:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mqC-J2-JN5"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="IED-8A-sN7" secondAttribute="centerX" id="4WF-JU-b7F"/>
+                            <constraint firstItem="gV1-LL-b7A" firstAttribute="top" secondItem="Y4O-Lr-Uno" secondAttribute="bottom" constant="25" id="LcJ-vZ-c5p"/>
+                            <constraint firstItem="IED-8A-sN7" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="62" id="P6V-EH-BGP"/>
+                            <constraint firstItem="Y4O-Lr-Uno" firstAttribute="top" secondItem="3LO-aQ-dfb" secondAttribute="bottom" constant="25" id="PID-me-Y1V"/>
+                            <constraint firstAttribute="centerX" secondItem="gV1-LL-b7A" secondAttribute="centerX" id="PuF-9K-Z3x"/>
+                            <constraint firstAttribute="centerX" secondItem="3LO-aQ-dfb" secondAttribute="centerX" id="SY2-Ab-uBx"/>
+                            <constraint firstItem="3LO-aQ-dfb" firstAttribute="top" secondItem="LGu-64-poI" secondAttribute="bottom" constant="25" id="XiB-MD-Jab"/>
+                            <constraint firstAttribute="centerX" secondItem="Y4O-Lr-Uno" secondAttribute="centerX" id="XlN-cJ-ntH"/>
+                            <constraint firstAttribute="centerX" secondItem="LGu-64-poI" secondAttribute="centerX" id="bA3-K5-ggI"/>
+                            <constraint firstItem="LGu-64-poI" firstAttribute="top" secondItem="IED-8A-sN7" secondAttribute="bottom" constant="25" id="pyJ-lK-FHF"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

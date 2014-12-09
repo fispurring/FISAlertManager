@@ -14,6 +14,8 @@
 		B71B44791A36D405001B1E37 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B71B44781A36D405001B1E37 /* Images.xcassets */; };
 		B71B447C1A36D405001B1E37 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B71B447A1A36D405001B1E37 /* LaunchScreen.xib */; };
 		B71B44881A36D405001B1E37 /* FISAlertManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B71B44871A36D405001B1E37 /* FISAlertManagerTests.m */; };
+		B71B44961A36D45D001B1E37 /* FISAlertManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B71B44931A36D45D001B1E37 /* FISAlertManager.m */; };
+		B71B44971A36D45D001B1E37 /* FISItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B71B44951A36D45D001B1E37 /* FISItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		B71B44811A36D405001B1E37 /* FISAlertManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FISAlertManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B71B44861A36D405001B1E37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B71B44871A36D405001B1E37 /* FISAlertManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FISAlertManagerTests.m; sourceTree = "<group>"; };
+		B71B44921A36D45D001B1E37 /* FISAlertManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISAlertManager.h; sourceTree = "<group>"; };
+		B71B44931A36D45D001B1E37 /* FISAlertManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISAlertManager.m; sourceTree = "<group>"; };
+		B71B44941A36D45D001B1E37 /* FISItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISItem.h; sourceTree = "<group>"; };
+		B71B44951A36D45D001B1E37 /* FISItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,7 @@
 		B71B446A1A36D405001B1E37 /* FISAlertManager */ = {
 			isa = PBXGroup;
 			children = (
+				B71B44911A36D45C001B1E37 /* FISAlertManager */,
 				B71B446F1A36D405001B1E37 /* AppDelegate.h */,
 				B71B44701A36D405001B1E37 /* AppDelegate.m */,
 				B71B44721A36D405001B1E37 /* ViewController.h */,
@@ -117,6 +124,17 @@
 				B71B44861A36D405001B1E37 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B71B44911A36D45C001B1E37 /* FISAlertManager */ = {
+			isa = PBXGroup;
+			children = (
+				B71B44921A36D45D001B1E37 /* FISAlertManager.h */,
+				B71B44931A36D45D001B1E37 /* FISAlertManager.m */,
+				B71B44941A36D45D001B1E37 /* FISItem.h */,
+				B71B44951A36D45D001B1E37 /* FISItem.m */,
+			);
+			path = FISAlertManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,7 +237,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B71B44961A36D45D001B1E37 /* FISAlertManager.m in Sources */,
 				B71B44741A36D405001B1E37 /* ViewController.m in Sources */,
+				B71B44971A36D45D001B1E37 /* FISItem.m in Sources */,
 				B71B44711A36D405001B1E37 /* AppDelegate.m in Sources */,
 				B71B446E1A36D405001B1E37 /* main.m in Sources */,
 			);
@@ -346,6 +366,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FISAlertManager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -356,6 +377,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FISAlertManager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
