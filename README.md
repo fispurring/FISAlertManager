@@ -6,7 +6,7 @@ An alert utility for ios to show alert easier and no need to consider compatibil
 ##Install
 Add FISAlertManager folder to your project.
 
-##Usage
+##Init
 Init FISAlertManager like os:
 
     [FISAlertManager sharedManager].viewController=self;
@@ -16,6 +16,7 @@ also you can set OK and Cancel button title:
     [FISAlertManager sharedManager].titleOK=NSLocalizedString(@"OK", nil);
     [FISAlertManager sharedManager].titleCancel=NSLocalizedString(@"Cancel", nil);
 
+##Usage
 Show a simple alert in just one line:
 
     [[FISAlertManager sharedManager] showAlert:@"Dialog" 
@@ -51,3 +52,15 @@ Show a login alert:
     [items addObject:[FISItem itemWithTitle:@"password" placeholder:@"password" security:YES]];
     [[FISAlertManager sharedManager] showAlert:@"LoginDialog" message:@"This is a Login Dialog" items:items];
 
+##Some Screenshots
+![ios8_1](Screenshots/ios8_1.png)
+![ios8_2](Screenshots/ios8_2.png)
+![ios8_3](Screenshots/ios8_3.png)
+![ios8_4](Screenshots/ios8_4.png)
+![ios8_5](Screenshots/ios8_5.png)
+
+![ios6_1](Screenshots/ios6_1.jpg)
+![ios6_2](Screenshots/ios6_2.jpg)
+![ios6_3](Screenshots/ios6_3.jpg)
+![ios6_4](Screenshots/ios6_4.jpg)
+![ios6_5](Screenshots/ios6_5.jpg)
